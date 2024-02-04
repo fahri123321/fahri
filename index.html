@@ -1,0 +1,203 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<html>
+<title>M.Fahri</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+ 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memutar Lagu Secara Otomatis dengan Looping</title>
+</head>
+<body>
+
+<audio id="myAudio">
+  <source src="Danbandung.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+// Membuat objek audio
+var audio = document.getElementById("myAudio");
+
+// Mengatur volume (opsional)
+audio.volume = 0.5;
+
+// Memainkan lagu secara otomatis saat halaman dimuat
+window.onload = function() {
+  audio.play();
+};
+
+// Mengatur event listener untuk deteksi saat lagu selesai diputar
+audio.addEventListener('ended', function() {
+  // Mengatur posisi pemutaran kembali ke awal
+  this.currentTime = 0;
+  // Memainkan lagu kembali
+  this.play();
+}, false);
+
+
+</script>
+
+
+</body>
+</html>
+<body>
+
+<div class="w3-bar w3-black">
+<div class="w3-container">
+<div class="w3-black">
+ <img src="panas1.jpg" width="100%" height="60%">
+</div>
+<div class="w3-bar w3-black">
+ <button class="w3-bar-item w3-button" onclick="openKota('tentang')">Tentang</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('sejarah')">Sejarah</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('album')">Album</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('favorit')">Lagu Favorit</button>
+	<div class="w3-dropdown-hover">
+	<button class="w3-button">Profile Anggota</button>
+		<div class="w3-dropdown-content w3-bar-block w3-card-4">
+			<button class="w3-bar-item w3-button" onclick="openKota('left')">Vokalis</button>
+			<button class="w3-bar-item w3-button" onclick="openKota('opacity')">Gitaris & vokalis</button>
+			<button class="w3-bar-item w3-button" onclick="openKota('opacity1')">Biografi</button>
+		</div>
+	</div>
+ <button class="w3-bar-item w3-button w3-right" onclick="openKota('about')">About Me</button>
+ 
+</div>
+ <div id="left" class="w3-container kota w3-animate-left" style="display:none">
+  <center><h2>Vokalis</h2>
+ <img src="panas5.jpg" width=25% height=40%></center>
+ <p>Erwin Koboi, vokalis dan pemain Harmonika The Panasdalam Bank mengatakan, EP “Yes I Am” memunculkan cita rasa lain dalam musiknya.</p>
+ </div>
+ <div id="opacity" class="w3-container kota w3-animate-opacity" style="display:none">
+ <center><h2>Gitaris & vokalis</h2>
+ <img src="panas6.jpg" width=25% height=40%></center>
+ <p>Para personel The Panasdalam Bank antara lain Erwin Koboi (vokal, harmonika), Alga (vokal), Boiq (gitar elektrik), Nawa (gitar akustik), Nandang (bas), Roy (drum), dan Eeng (perkusi).</p>
+ </div>
+
+ <div id="opacity1" class="w3-container kota w3-animate-opacity" style="display:none">
+ <center><h2>Biografi</h2>
+ <img src="panas6.jpg" width=25% height=40%></center>
+ <p>The PanasDalam adalah sebuah grup musik yang berasal dari Bandung, Indonesia. Mereka adalah Front Pembela Islam Kristen Hindu Buddha yang diprakarsai oleh:
+  <li>Erwin : Vocalis dan Penjual Pakaian</li>
+  <li>Nawa Luba : Gitaris dan guru</li>
+  <li>Nandang : Yang sudah mau melahirkan</li>
+  <li>Roy : Drummer dan senang</li>
+  <li>Pidi Baiq : Pemuka Agama</li>
+  <li>Alga Indria : vocal kedua</li>
+  <li>Budi biola : ya pemain biola, apa lagi</li></p>
+<p>Sebuah Negara yang memproklamirkan kemerdekaannya pada tanggal 18 agustus 1995 di sebuah studio seni lukis, 
+lantai dua Fakultas Seni Rupa dan Desain – Institut Teknologi Bandung (FSRD – ITB). 
+Negara ini dipimpin oleh imam beser mereka, seorang haji yang pada waktu itu mungkin masih menyembah api dan semut tetapi sekarang tidak. Pimpinan mereka adalah haji mabrur yang sampai sekarang masih membaca kitab Wedha, Thaurat, Injil, dan buku–buku lain, serta tentunya kitab suci Al-Qur’an</p>
+<p>Haji mabrur itu bernama Pidi Baiq. Belakangan ada kabar bahwa gelar Haji yang melekat pada nama beliau tidak lain adalah nama marga. Dialah yang pada waktu itu berdiri diatas meja persegi empat dan membacakan teks proklamasi. Negara yang memang segitulah luas wilayahnya, tetapi penuh dengan ruh sukacita didalamnya. Negara yang bila susah maka semua susah, negara yang bila senang, semua sama merasakannya. Negara ini memang satu-satunya di dunia. Kepala negaranya hafal semua nama penduduknya.</p>
+<p>Negara Kesatuan Republik The Panasdalam yang mengaku ingin berak sejak 1995. Namun pada tahun 1999 Republik The Panasdalam bergabung lagi ke Negara Indonesia dan mengubah namanya menjadi Daerah Istimewa The Panasdalam. Perubahan yang terakhir terjadi pada tahun 2007, namun ternyata berubah lagi menjadi The Panasdalam Kingdom, “Kingdom of have fun”, hingga sekarang. </p>
+</div>
+<div id="tentang" class="w3-container kota w3-animate-zoom" style="display:none">
+ <center><img src="panas2.jpg" width=100% height=90%></center>
+ <p> The Panasdalam Bank adalah sebuah band asal Bandung yang unik dan penuh dengan kejutan. Digawangi oleh Imam Besar Pidi Baiq, yang dikenal lewat franchise Dilan, Erwin Koboi (vokal - Harmonika), Alga (vocal), Boiq (gitar elektrik), Nawa (gitar akustik), Nandang (gitar Bass), Roy (drum), dan Eeng (perkusi).</p>
+ <p>Awalnya, grup musik ini terbentuk oleh Fathia Izzati, Era Patigo dan Mayo Falmonti pada 2016. Namun kemudian, Fathia mengajak kakaknya, Faiz Novascotia Saripudin dan Iqbal Anggakusumah untuk bergabung. Namun sayang, Mayo memutuskan untuk keluar setelah enam bulan terbentuk karena kesibukan pribadi dan digantikan Nugi Wicaksono.Melansir Kompas.com , band ini dikenal sebagai bintang kampus saat itu.
+Artikel ini telah tayang di Sripoku.com dengan judul The Panasdalam Bank, Band Indi Asal Bandung, Beranggotakan Pidi Baiq Penulis Novel Dilan.
+
+</p>
+</div>
+
+<div id="sejarah" class="w3-container kota w3-animate-bottom" style="display:none">
+ <h2>Sejarah The Panas Dalam</h2>
+ <p> THE PANASDALAM adalah akronim dari: THE-nya dari aTHEis, PA-nya dari PAganisme, NAS-nya dari NASrani, DA-nya dari Hindu budDA, LAM-nya dari isLAM
+ Didirikan tanggal 18 Agustus tahun 1995, di salah satu ruangan kuliah yang ada di kampus ITB (Institut Teknologi Bandung), jalan Ganesha 10 Bandung.
+    Didirikan sebagai sebuah negara dengan nama: NKRTPD, singkatan dari Negara Kesatuan Republik The Panasdalam. Menjadi sebuah negara merdeka yang memisahkan diri dari Negara Kesatuan Republik Indonesia sebagai bentuk lampias dari rasa kecewa kepada presiden Indonesia (Bapak Suharto), yang waktu itu dianggap sudah harus meletakan jabatannya. 
+
+    NKRTPD adalah negara kecil, berukuran 8X10 meter. Penduduknya merasa kaya raya karena kalau makan atau minum pada pergi ke luar negeri, yaitu di Indonesia, demikian juga kalau ee atau pipis. Orangtua dan pacar, semuanya pada tinggal di luar negeri.
+</p>
+ 
+</div>
+
+<div id="album" class="w3-container kota w3-animate-bottom" style="display:none">
+ <h1>Album The Panas Dalam</h1>
+ <hr>
+ <h3>(The Panas Dalam)</h3><img src="panas3.jpg" width=20% height=35%>  
+ <p>Daftar lagu dari album ini:</p> 
+ <ul>
+	<li>SUDAH JANGAN KE JATINANGOR</li>
+	<li>Cita-Citaku (2003)</li>
+	<li>Tenang Saja</li>
+	<li>Dan Bandung </li>
+	<li>semacam Kasih sayang</li>
+	<li>IBU IBU IBU</li>
+	<li>Jangan Sombong</li>
+	<li>Teman Teman Jangan sekolah</li>
+	<li>Koboy Kampus</li>
+	<li>LIBRANI OUTCHE ENVIRIE</li>
+	<li>Risau NKRI</li>
+	<li>salam Mantan</li>
+	<li>Kucing Adalah Anjingku</li>
+	<li>Kita Harus Bilang Apa Dalam Doa</li>
+	<li>wanita</li>
+	<li>Bunyi Sunyi</li>
+	<li>Setiap Yang Bernama</li>
+	<li>Mulai Bernyanyi</li>
+	<li>Aku Tenang</li>
+ </ul>
+</div>
+
+<div id="favorit" class="w3-container kota w3-animate-zoom" style="display:none">
+<p>The Panasdalam Bank dan Danilla, seniman berbakat di Indonesia, kembali menghadirkan karya cipta mereka berjudul "Dan Bandung." Dalam lagu ini, mereka menggambarkan perasaan yang mendalam terhadap Kota Bandung, bukan hanya sebagai lokasi geografis, melainkan sebagai tempat di mana perasaan batin .</p>
+<br>
+<center>
+<p>CLICK HERE</p>
+<img src="panah.png" width=4% height=5%><img src="panah.png" width=4% height=5%><img src="panah.png" width=4% height=5%>
+<br>
+<a href="https://youtu.be/smxW5YVIU7g?si=veXsR6B5KEyJkCVz"><img src="panas4.jpg" width=20% height=35%></a>
+<p></p></center>
+<br>
+<p>"Sesuai dengan judulnya, lagu ini menceritakan segala atmosfer Kota Bandung yang menjadi latar film Dilan 1991," tulis Warner Music Indonesia selaku label rekaman yang merilis album soundtrack Dilan 1991</p>
+</div>
+
+<div id="about" class="w3-container kota w3-animate-zoom" style="display:none">
+<center>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+</head>
+<body>
+    <video controls width="600" height="400">
+        <source src="fahri.mp4" type="video/mp4">
+        <!-- Jika browser tidak mendukung video MP4, Anda dapat menyediakan sumber video lain di bawah ini -->
+        <!-- <source src="video_example.webm" type="video/webm"> -->
+        Maaf, browser Anda tidak mendukung tag video.
+    </video>
+</body>
+</html>
+<br>
+<br>
+<h2>Muhamad Fahri Farid Al Habibi</h2>
+<h3>IF-4</h3>
+<h3>10123146</h3>
+<h2>Universitas Komputer Indonesia</h2>
+<a href="https://www.instagram.com/fhri_f_a?igsh=MXJpbzU2dzdmZ3UxNw=="><img src="ig.jpeg" width=4% height=5%></a>
+<a href="twit.html"><img src="twittwer.png" width=4% height=5%></a>
+
+
+
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+</html>
